@@ -1,0 +1,19 @@
+{
+    "filename": "D:\\videos\\target1\\0.mp4",
+    "time":
+    [
+        {
+            "det_beg": "68",
+            "det_end": "73",
+            "tar_beg": "8",
+            "tar_end": "13"
+        },
+        {
+            "det_beg": "91",
+            "det_end": "99",
+            "tar_beg": "4",
+            "tar_end": "13"
+        }
+    ],
+    "pic_path": "D:\\videos\\detect1_data\/1.wmv0.mp4.jpg"
+}

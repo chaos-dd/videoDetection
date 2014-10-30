@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<videoPath>
+		<targetPath>D:\videos\target1</targetPath>
+	</videoPath>
+
+
+	
+	<colorThres>0.5</colorThres>
+	<orbThres>50</orbThres>
+	<!--每秒采样的帧数-->
+	<used_fps>1</used_fps>
+	<!--输出的最小时间段，单位秒，小于此值得的视频匹配将被忽略-->
+	<timeInterval>5</timeInterval>
+</config>

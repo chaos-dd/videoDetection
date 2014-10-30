@@ -1,0 +1,60 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+COLOR_SPACE_BGR	video_dll.h	36;"	d
+COLOR_SPACE_BGR	video_dll.h	39;"	d
+COLOR_SPACE_HLS	video_dll.h	37;"	d
+COLOR_SPACE_HLS	video_dll.h	40;"	d
+ColorHist	video_dll.h	/^        ColorHist()$/;"	f	class:vd::ColorHist
+ColorHist	video_dll.h	/^        ColorHist(int binsNum1, int binsNum2, int binsNum3)$/;"	f	class:vd::ColorHist
+ColorHist	video_dll.h	/^    class ColorHist$/;"	c	namespace:vd
+DLL_DEFINES_H_H	defines.h	3;"	d
+DLL_EXPORTS	defines.h	10;"	d
+DLL_EXPORTS	defines.h	13;"	d
+DLL_EXPORTS	defines.h	8;"	d
+DLL_EXPORTS	video_dll.h	15;"	d
+DLL_EXPORTS	video_dll.h	17;"	d
+DLL_EXPORTS	video_dll.h	20;"	d
+FeatIndexType	video_dll.h	/^    typedef cv::flann::Index FeatIndexType;$/;"	t	namespace:vd
+UTILITIES_H_H	video_dll.h	3;"	d
+Video_det_param	video_dll.h	/^        Video_det_param() :timeInterval(2), colorThres(0.2), orbThres(50), used_fps(2)$/;"	f	class:vd::Video_det_param
+Video_det_param	video_dll.h	/^    class DLL_EXPORTS Video_det_param$/;"	c	namespace:vd
+_EXPORTING	dll_export_utilities.cpp	1;"	d	file:
+_EXPORTING	video_det_utilities.cpp	15;"	d	file:
+_EXPORTING	video_proc_utilites.cpp	12;"	d	file:
+assembleMatches	video_det_utilities.cpp	/^    static void assembleMatches(Video_det_param &param, SparseMat &flagMat, int beg0, int end0, int beg1, int end1$/;"	f	namespace:vd
+buildVideoFeatIndex	video_proc_utilites.cpp	/^    int buildVideoFeatIndex(Mat &descriptors, string videoPath, shared_ptr< FeatIndexType > &desc_index)$/;"	f	namespace:vd
+colorThres	video_dll.h	/^        float colorThres;$/;"	m	class:vd::Video_det_param
+computeFeat	video_proc_utilites.cpp	/^    void ColorHist::computeFeat(Mat &src, Mat &hist, int colorSpaceType, int normType)$/;"	f	class:vd::ColorHist
+detectMultipeVideos	dll_export_utilities.cpp	/^    DLL_EXPORTS int detectMultipeVideos(vector<string> videoNames, vector<string> &jsonResult, vector<string> &tarVideoNames)$/;"	f	namespace:vd
+detectSingleVideo	dll_export_utilities.cpp	/^    DLL_EXPORTS int detectSingleVideo(string videoName, string &strJsonResult, vector<string> &tarVideoNames)$/;"	f	namespace:vd
+detectVideoCitation	video_det_utilities.cpp	/^    int detectVideoCitation(string detectVideoName, string targetVideoName, Video_det_param param, string &strJsonResult)$/;"	f	namespace:vd
+drawDetResult	video_det_utilities.cpp	/^    Mat drawDetResult(int frameNum1, vector<pair<int, int>> matchResult_tar, int frameNum2, vector<pair<int, int>> matchResult_det)$/;"	f	namespace:vd
+exactFeatAndKFrame	video_proc_utilites.cpp	/^    int exactFeatAndKFrame(string videoPath, Video_det_param param, Mat &colorFeat,$/;"	f	namespace:vd
+getFeatDim	video_proc_utilites.cpp	/^    int ColorHist::getFeatDim()$/;"	f	class:vd::ColorHist
+getVideoFrame	dll_export_utilities.cpp	/^    DLL_EXPORTS int getVideoFrame(string videoName, int second, string frameName)$/;"	f	namespace:vd
+go_bottom_right	video_det_utilities.cpp	/^    static tuple<int, int> go_bottom_right(Mat &recordMap, SparseMat & flagMat, int r, int c, int interval)$/;"	f	namespace:vd
+initModule	dll_export_utilities.cpp	/^    DLL_EXPORTS int initModule(string _configFilePath)$/;"	f	namespace:vd
+initSteps	video_proc_utilites.cpp	/^    void ColorHist::initSteps()$/;"	f	class:vd::ColorHist
+loadFromFile	video_proc_utilites.cpp	/^    int Video_det_param::loadFromFile(string configFilePath)$/;"	f	class:vd::Video_det_param
+loadTarVideoNames	dll_export_utilities.cpp	/^    int loadTarVideoNames(string configFilePath, vector<string> &tarVideoNames)$/;"	f	namespace:vd
+loadVideoFeat	video_proc_utilites.cpp	/^    int loadVideoFeat(string videoName, Mat &colorFeat, vector<vector<KeyPoint>> &keypoints, Mat & descriptors, vector<int> &feat2FrameMap)$/;"	f	namespace:vd
+loadVideoIndex	video_det_utilities.cpp	/^    int loadVideoIndex(string videoPath, Mat &descriptors, shared_ptr<FeatIndexType> &index, vector<int> &feat2FrameMap)$/;"	f	namespace:vd
+loadVideoIndex	video_proc_utilites.cpp	/^    int loadVideoIndex(string videoPath, Mat &descriptors, shared_ptr<FeatIndexType> &index)$/;"	f	namespace:vd
+m_binsNum	video_dll.h	/^        int m_binsNum[3];$/;"	m	class:vd::ColorHist
+m_steps	video_dll.h	/^        int m_steps[3];$/;"	m	class:vd::ColorHist
+orbThres	video_dll.h	/^        float orbThres;$/;"	m	class:vd::Video_det_param
+procBatchVideo	dll_export_utilities.cpp	/^    DLL_EXPORTS int procBatchVideo(vector<string>  folders, string configFilePath)$/;"	f	namespace:vd
+procSingleVideo	dll_export_utilities.cpp	/^    int procSingleVideo(string videoPath, Video_det_param param$/;"	f	namespace:vd
+processSingleVideo	dll_export_utilities.cpp	/^    DLL_EXPORTS int processSingleVideo(string videoPath)$/;"	f	namespace:vd
+ransac	video_det_utilities.cpp	/^    int ransac(vector<KeyPoint> &keys1, vector<KeyPoint> &keys2, vector<DMatch> &matches, vector<DMatch> &fined_matches, int threshold, int iteration)$/;"	f	namespace:vd
+retrieval_frames	video_det_utilities.cpp	/^    static int retrieval_frames(Mat &descriptors, shared_ptr<FeatIndexType> &feat_index, size_t knn_num, vector<int> &feat2FrameMap,vector<int> & GPos2LPos$/;"	f	namespace:vd
+timeInterval	video_dll.h	/^        int timeInterval;$/;"	m	class:vd::Video_det_param
+used_fps	video_dll.h	/^        float used_fps;$/;"	m	class:vd::Video_det_param
+vd	dll_export_utilities.cpp	/^namespace vd$/;"	n	file:
+vd	video_det_utilities.cpp	/^namespace vd$/;"	n	file:
+vd	video_dll.h	/^namespace vd$/;"	n
+vd	video_proc_utilites.cpp	/^namespace vd$/;"	n	file:
